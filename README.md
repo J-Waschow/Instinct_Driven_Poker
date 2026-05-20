@@ -29,18 +29,20 @@ The system follows a clear three-stage pipeline:
 
 ## Repository Structure
 PSE/
-├── preprocess_dog_emotions.py          # Data preprocessing
-├── train_instinct_encoder.py           # Initial training on dog emotions
-├── fine_tune_poker_instincts.py        # Fine-tuning + GResilience layer + loss graph
-├── pinn_strategy_optimizer.py          # PINN training + energy loss graph
-├── pse_final_evaluation.py          # Full evaluation + RTP & boldness graphs
-├── processed_dog_instincts_from_csv.pkl
-├── instinct_encoder_pretrained.pth
-├── instinct_encoder_poker_finetuned.pth
-├── pinn_strategy_optimizer.pth
-├── instinct_finetune_loss_curve.png
-├── pinn_strategy_loss_curve.png
-├── pse_rtp_over_time.png
-├── puss_e_boldness_and_seed_hits.png
+├── preprocess_dog_emotions.py              # Data preprocessing & valence-arousal mapping
+├── train_instinct_encoder.py               # Initial training on dog emotion data
+├── fine_tune_poker_instincts.py            # Fine-tuning with GameTheoreticLayer (GResilience)
+├── pinn_strategy_optimizer.py              # PINN training with physics loss
+├── pse_final_evaluation.py              # Full end-to-end evaluation + graphs
+│
+├── processed_dog_instincts_from_csv.pkl    # Preprocessed emotional dataset
+├── instinct_encoder_pretrained.pth         # Base model after dog emotion training
+├── instinct_encoder_poker_finetuned.pth    # Fine-tuned on poker hands
+├── pinn_strategy_optimizer.pth             # Final PINN model
+│
+├── instinct_finetune_loss_curve.png        # Training loss graph (fine-tuning)
+├── pinn_strategy_loss_curve.png            # PINN energy loss graph
+├── pse_rtp_over_time.png                # RTP evolution over 30,000 hands
+├── pse_boldness_and_seed_hits.png       # Boldness dynamics + seed detection
 └── README.md
 text
