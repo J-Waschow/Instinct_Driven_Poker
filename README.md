@@ -28,7 +28,7 @@ The system follows a clear three-stage pipeline:
 3. **Physics-Informed Optimization** — PINN refines emotional states into final hold/bet decisions
 
 ## Repository Structure
-PUSS-E/
+PSE/
 ├── preprocess_dog_emotions.py          # Data preprocessing
 ├── train_instinct_encoder.py           # Initial training on dog emotions
 ├── fine_tune_poker_instincts.py        # Fine-tuning + GResilience layer + loss graph
